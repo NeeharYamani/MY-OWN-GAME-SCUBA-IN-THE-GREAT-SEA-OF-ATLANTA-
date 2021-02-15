@@ -13,7 +13,8 @@ var rewardGroup;
 var score = 0;
 
 function preload(){
-  bgimg = loadImage("images/bg5.jpg");
+  bgimg = loadImage("images/5.png");
+  
   diveranime_diving = loadAnimation("images/s.png", "images/c.png", "images/u.png",  "images/b.png", "images/a.png", "images/d.png"," images/i.png", "images/v.png");
 
   bubble1 = loadImage("images/bubble1.png");
@@ -64,16 +65,16 @@ function draw() {
     text("Score: " + score, displayHeight/2 - 200, displayWidth/2 + 500);
 
     bg.velocityX = -2;
-    if(bg.x <600){
+    if(bg.x <680){
       bg.x = displayWidth/2+40  ;
     }
     if(keyDown(UP_ARROW)){
-      diver.y = diver.y-4
+      diver.y = diver.y-8
     }
    
    
    if(keyDown(DOWN_ARROW)){
-     diver.y = diver.y+4
+     diver.y = diver.y+8
    }
    if(diver.isTouching(obstacleGroup)){
      gameState = END;
@@ -85,6 +86,7 @@ function draw() {
    if(bg.velocityX = -2){
     
    }
+   
 
    if(diver.isTouching(rewardGroup)){
      rewardGroup.destroyEach();
