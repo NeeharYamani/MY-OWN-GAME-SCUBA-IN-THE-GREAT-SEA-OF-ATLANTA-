@@ -116,7 +116,7 @@ function draw() {
      score = score + 4;
    }
 
-   if(score==10){
+   if(score==30){
      gameState = "LEVEL2"
 
    }
