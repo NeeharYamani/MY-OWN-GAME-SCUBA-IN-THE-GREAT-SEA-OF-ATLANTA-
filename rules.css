@@ -18,19 +18,24 @@ button {
     margin-left: 45%;
     margin-top: -10%;
     border-radius: 10px;
-    width: 150px;
-    height: 60px;
+    width: 240px;
+    height: 100px;
     border: 3px solid rgb(255, 255, 255);
-    background-image: linear-gradient(-90deg, rgb(74, 86, 252), rgb(235, 18, 235));
+    background-image: linear-gradient(-90deg, rgb(22, 133, 230), rgb(30, 52, 252), rgb(19,166,235));
 }
 a {
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    font-size: 100%;
+    font-size: 130%;
 }
 
 .img{
-    margin-left: 70%;
-    margin-top: -15%;
+    margin-left: 45%;
+    
 } 
+.h4{
+    display:flex;
+   
+    
+}
